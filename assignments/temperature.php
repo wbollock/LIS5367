@@ -16,6 +16,19 @@
 
     <!-- Custom styles for this template -->
     <link href="../starter-template.css" rel="stylesheet">
+    
+    <style>
+    table, th, td {
+    border: 1px solid black;
+    }
+
+    th, td {
+    padding: 15px;
+    text-align: left;
+    }
+
+    </style>
+
   </head>
 
   <body>
@@ -73,7 +86,7 @@ echo    "<th>Celsius</th>";
 echo    "<th>Weather</th>";
 echo "</tr>";
 
-for ($i = 0; $i <= 99; $i++) {
+for ($i = 0; $i <= 100; $i++) {
 // table data
 echo "<tr>";
 
@@ -93,13 +106,15 @@ echo "<tr>";
  echo "</td>";
 
   
- echo "<td>";
  // print weather
  if ($i < 70) {
+ echo "<td style='color:blue'>";
  echo "cold";
  } elseif ( $i >= 70 && $i < 90 ) {
+ echo "<td style='color:green'>";
  echo "nice";
  } else {
+ echo "<td style='color:red'>";
  echo "hot";
  } 
  echo "</td>";
