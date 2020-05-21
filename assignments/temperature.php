@@ -60,10 +60,64 @@
 <?php
 
 
-echo "<h1>Temperature Placeholder</h1>"
+echo "<h1>Temperature Assignment</h1>";
+echo "Converting Fahrenheit to Celsius";
+
+echo "";
+
+echo "<table>";
+// table headers
+echo "<tr>";
+echo    "<th>Fahrenheit</th>";
+echo    "<th>Celsius</th>";
+echo    "<th>Weather</th>";
+echo "</tr>";
+
+for ($i = 0; $i <= 99; $i++) {
+// table data
+echo "<tr>";
+
+ // 3 <td>'s per <tr>
+
+ echo "<td>";
+ // print F temp
+ echo "$i";
+ echo " °F";
+ echo "</td>";
+
+ echo "<td>";
+ // print C temp
+ $Celsius = ($i - 32 * (5/9));
+ echo round($Celsius,1);
+ echo " °C";
+ echo "</td>";
+
+  
+ echo "<td>";
+ // print weather
+ if ($i < 70) {
+ echo "cold";
+ } elseif ( $i >= 70 && $i < 90 ) {
+ echo "nice";
+ } else {
+ echo "hot";
+ } 
+ echo "</td>";
+
+
+}
+echo "</tr>";
+echo "</table>";
+
+// start at 0 F
+
+// if F < 70, cold
+// if F > 70 but < 90, print nice
+// if F > 90, print hot
+
+// F - 32 * (5/9) = C
 
 
 ?>
-
 </main>
 <!-- Assignment End -->
