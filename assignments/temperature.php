@@ -86,7 +86,7 @@ echo    "<th>Celsius</th>";
 echo    "<th>Weather</th>";
 echo "</tr>";
 
-for ($i = 0; $i <= 100; $i++) {
+for ($i = 0, $j = 1; $i <= 120; $i++) {
 // table data
 echo "<tr>";
 
@@ -116,7 +116,7 @@ echo "<tr>";
  // print weather
  if ($i < 70) {
 
- echo "<td style='color:hsl(";
+ echo "<td style='color:white;background-color:hsl(";
  $gradient = (250 - $i);
  echo "$gradient";
  echo ",100%,50%)'>";
@@ -125,7 +125,7 @@ echo "<tr>";
 
  } elseif ( $i >= 70 && $i < 90 ) {
 
- echo "<td style='color:hsl(";
+ echo "<td style='color:white;background-color:hsl(";
  $gradient = (170 - $i);
  echo "$gradient";
  echo ",100%,50%)'>";
@@ -133,14 +133,14 @@ echo "<tr>";
  echo "nice";
 
  } else {
-
- echo "<td style='color:hsl(";
- $gradient = (50 - $i);
+ 
+ echo "<td style='color:white;background-color:hsl(";
+ $gradient = (0 + $j);
  echo "$gradient";
  echo ",100%,50%)'>";
 
  echo "hot";
-
+ $j++;
  } 
  echo "</td>";
 
