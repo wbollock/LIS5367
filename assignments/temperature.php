@@ -105,17 +105,42 @@ echo "<tr>";
  echo " °C";
  echo "</td>";
 
-  
+ //echo "<td style='color:linear-gradient(blue, green, red)'>";
+ // dont do that, just add to HSL
+
+ // HSL color: hsl(0, 100%, 50%)
+ // 0 = red
+ // 125 = green
+ // 250 = blue (do 240)
+
  // print weather
  if ($i < 70) {
- echo "<td style='color:blue'>";
+
+ echo "<td style='color:hsl(";
+ $gradient = (250 - $i);
+ echo "$gradient";
+ echo ",100%,50%)'>";
+
  echo "cold";
+
  } elseif ( $i >= 70 && $i < 90 ) {
- echo "<td style='color:green'>";
+
+ echo "<td style='color:hsl(";
+ $gradient = (170 - $i);
+ echo "$gradient";
+ echo ",100%,50%)'>";
+
  echo "nice";
+
  } else {
- echo "<td style='color:red'>";
+
+ echo "<td style='color:hsl(";
+ $gradient = (50 - $i);
+ echo "$gradient";
+ echo ",100%,50%)'>";
+
  echo "hot";
+
  } 
  echo "</td>";
 
