@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -13,10 +12,10 @@
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/starter-template/">
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="starter-template.css" rel="stylesheet">
+    <link href="../starter-template.css" rel="stylesheet">
   </head>
 
   <body>
@@ -30,10 +29,10 @@
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="assignments/temperature.php">Temperature</a>
+            <a class="nav-link" href="#">Temperature</a>
           </li>
           <!--<li class="nav-item">
             <a class="nav-link disabled" href="#">Disabled</a>
@@ -55,22 +54,16 @@
       </div>
     </nav>
 
-    <main role="main" class="container">
+ <main role="main" class="container">
+<!-- Assignment Start -->
 
-      <div class="starter-template">
-        <h1>Will Bollock's LIS5367 Portfolio</h1>
-        <p class="lead">A Bootstrap template to make my life easier.</p>
-      </div>
+<?php
 
-    </main><!-- /.container -->
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="assets/popper.min.js"></script>
-    <script src="dist/bootstrap.min.js"></script>
-  </body>
-</html>
+echo "<h1>Temperature Placeholder</h1>"
 
+
+?>
+
+</main>
+<!-- Assignment End -->
